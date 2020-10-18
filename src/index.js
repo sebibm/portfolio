@@ -1,12 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './styles/index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+
+const style = {
+  margin: '0.5em',
+  paddingLeft: 0,
+  listStyle: 'none',
+  background: '#f00'
+};
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App style={style}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
