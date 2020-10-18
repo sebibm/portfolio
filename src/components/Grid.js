@@ -14,6 +14,9 @@ import Fade from 'react-reveal/Fade';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import FacebookIcon from '@material-ui/icons/Facebook';
+import {
+    Link
+} from "react-router-dom";
 
 
 
@@ -74,7 +77,6 @@ export default function CenteredGrid() {
                             <Shake duration={1000} delay={1000}>
                                 <div>
                                     <h4>Gracias por visitar mi portfolio. Soy Sebastián y te doy la bienvenida, tengo 33 años y soy de Tucumán, Argentina</h4>
-
                                 </div>
                             </Shake>
                             <Bounce left duration={1000} delay={2000}>
@@ -114,16 +116,32 @@ export default function CenteredGrid() {
                     </Paper>
                 </Grid>
                 <Grid item xs={12} sm={12}>
+                </Grid>
+                <Grid item xs={12} sm={4}>
+                </Grid>
+                <Grid item xs={12} sm={4}>
                     <h2 className="red">Proyectos mas relevantes</h2>
                 </Grid>
-                <Grid item xs={12} sm={8}>
-                    <ProjectoTensolite />
+                <Grid item xs={12} sm={4}>
                 </Grid>
-                <Grid item xs={12} sm={6}>
-                    <ProjectoTensolite />
+                <Grid item xs={12} sm={4}>
+                    <Paper elevation={3} className={classes.paper2}>
+                        <Link to="/tensolite" style={{ textDecoration: 'none' }}>
+                            <ProjectoTensolite />
+                        </Link>
+                    </Paper>
                 </Grid>
-                <Grid item xs={12} sm={6}>
-                    <ProjectoTensolite />
+                <Grid item xs={12} sm={4}>
+                    <Paper elevation={3} className={classes.paper2}>
+                        <Link to="/tensolite" style={{ textDecoration: 'none' }}>
+                        </Link>
+                    </Paper>
+                </Grid>
+                <Grid item xs={12} sm={4}>
+                    <Paper elevation={3} className={classes.paper2}>
+                        <Link to="/tensolite" style={{ textDecoration: 'none' }}>
+                        </Link>
+                    </Paper>
                 </Grid>
             </Grid>
         </div >

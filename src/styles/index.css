@@ -46,8 +46,13 @@ code {
 
 .MuiTypography-h5{
   font-family: 'IBM Plex Mono', monospace !important;
+  font-weight: 700;
 }
 
 .MuiChip-colorSecondary{
   margin:4px
+}
+
+.MuiTypography-displayBlock {
+  font-weight: 900 !important;
 }
