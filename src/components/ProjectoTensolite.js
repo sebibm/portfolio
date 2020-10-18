@@ -101,12 +101,12 @@ export default function RecipeReviewCard() {
                 </CardActions>
                 <Collapse in={expanded} timeout="auto" unmountOnExit>
                     <CardContent className="white">
-                        <img alt="Tensolite" src="/img/tensolite1.png" className={classes.media2} />
-                        <img alt="Tensolite" src="/img/tensolite2.png" className={classes.media2} />
-                        <img alt="Tensolite" src="/img/tensolite3.png" className={classes.media2} />
-                        <img alt="Tensolite" src="/img/tensolite4.png" className={classes.media2} />
-                        <img alt="Tensolite" src="/img/tensolite5.png" className={classes.media2} />
-                        <img alt="Tensolite" src="/img/tensolite6.png" className={classes.media2} />
+                        <img alt="Tensolite" src="../tensolite1.png" className={classes.media2} />
+                        <img alt="Tensolite" src="../tensolite2.png" className={classes.media2} />
+                        <img alt="Tensolite" src="../tensolite3.png" className={classes.media2} />
+                        <img alt="Tensolite" src="../tensolite4.png" className={classes.media2} />
+                        <img alt="Tensolite" src="../tensolite5.png" className={classes.media2} />
+                        <img alt="Tensolite" src="../tensolite6.png" className={classes.media2} />
                     </CardContent>
                 </Collapse>
             </Card>
