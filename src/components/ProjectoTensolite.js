@@ -65,7 +65,7 @@ export default function RecipeReviewCard() {
                     title="Tensolite" />
                 <CardMedia
                     className={classes.media}
-                    image="/img/tensolite1.png"
+                    image="../tensolite1.png"
                     title="Paella dish" />
                 <CardContent>
                     <Grid paddingTop={2}>
