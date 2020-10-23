@@ -6,13 +6,8 @@ import CardHeader from '@material-ui/core/CardHeader';
 import CardContent from '@material-ui/core/CardContent';
 import Chip from '@material-ui/core/Chip';
 import { Grid } from '@material-ui/core';
-import tensolite1 from '../img/tensolite1.png';
-import tensolite2 from '../img/tensolite2.png';
-import tensolite3 from '../img/tensolite3.png';
-import tensolite4 from '../img/tensolite4.png';
-import tensolite5 from '../img/tensolite5.png';
-import tensolite6 from '../img/tensolite6.png';
-
+import covid1 from '../img/covid1.png';
+import covid2 from '../img/covid2.png';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -20,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
         background: '#00000000',
         textAlign: 'center',
     },
-   
+
 }));
 
 export default function RecipeReviewCard() {
@@ -34,32 +29,30 @@ export default function RecipeReviewCard() {
                     title="Tensolite" />
                 <CardContent>
                     <Grid paddingTop={2}>
+                        <Chip label="Uso de API" color="secondary" />
                         <Chip label="Laravel" color="secondary" />
-                        <Chip label="Nodejs" color="secondary" />
-                        <Chip label="Express" color="secondary" />
                         <Chip label="Linux" color="secondary" />
-                        <Chip label="SAP" color="secondary" />
+                        <Chip label="Chartjs" color="secondary" />
                     </Grid>
                     <h3 className="white">
-                        Panel de autogestion para tensolite S.A. Incluye modulos de control stock, modulo de gestion de turnos, modulo de auditoria.
+                        Estadisticas del covid en Argentina en tiempo real.
+                    </h3>
+                    <h3 className="white">
+                        Utilizando API de la universidad John Hopkins. Graficos realizados con la libreria chartjs
                     </h3>
                     <h4 className="red">
                         Backend con Laravel 5.8
                     </h4>
                     <h4 className="red">
-                        API con Nodejs y express para obtener informacion de BD de ERP Bejerman (Flexware).
+                        Utilización de API de <a href="https://coronavirus.jhu.edu/data">John Hopkins University.</a>.
                     </h4>
                     <h4 className="red">
-                        Migracion de API de nodejs a Interfaces con Webservices de SAP.
+                        Graficos realizados con libreria chartjs
                     </h4>
                     <ImageMasonry
                         imageUrls={[
-                            tensolite1,
-                            tensolite2,
-                            tensolite3,
-                            tensolite4,
-                            tensolite5,
-                            tensolite6,
+                            covid1,
+                            covid2,
                         ]}
                         numCols={2}
                         containerWidth={"100%"}

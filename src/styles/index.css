@@ -56,3 +56,8 @@ code {
 .MuiTypography-displayBlock {
   font-weight: 900 !important;
 }
+
+.react-image-masonry-col img {
+  padding: 10px;
+}
+

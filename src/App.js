@@ -1,13 +1,13 @@
 import React from 'react';
 import './styles/App.css';
 import Main from './components/Main'
-import Footer from './components/Footer'
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
 import ProjectoTensolitePage from './components/ProjectoTensolitePage'
+import ProjectoCovidPage from './components/ProjectoCovidPage'
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
 
@@ -44,8 +44,8 @@ function App() {
                 <Route path="/tensolite">
                   <ProjectoTensolitePage />
                 </Route>
-                <Route path="/footer">
-                  <Footer />
+                <Route path="/covid">
+                  <ProjectoCovidPage />
                 </Route>
                 <Route path="/">
                   <Main />
@@ -54,10 +54,6 @@ function App() {
             </div>
           </Router>
         </header>
-
-        <footer>
-
-        </footer>
       </div>
     </MuiThemeProvider>
 

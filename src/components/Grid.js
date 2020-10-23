@@ -7,6 +7,7 @@ import Photo from '../photo.jpeg'
 import Skills from './Skills'
 
 import ProjectoTensolite from './ProjectoTensolite'
+import ProjectoCovid from './ProjectoCovid'
 import '../styles/grid.css'
 import Bounce from 'react-reveal/Bounce';
 import Shake from 'react-reveal/Shake';
@@ -39,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
         textAlign: 'center',
         color: 'white',
         background: '#0000004d',
-        'min-height': 250,
+        'min-height': 600,
         'line-height': '1.5rem'
     },
 
@@ -54,7 +55,7 @@ export default function CenteredGrid() {
             <Grid container spacing={3}>
                 <Grid item xs={12} sm={12}>
                     <Paper elevation={3} className={classes.paper1}>
-                        <img className="avatar" alt="Remy Sharp" src={Photo} />
+                        <img className="avatar" alt="Sebastian Barcatt Mirande - Portfolio" src={Photo} />
                         <h1>Sebastián Barcatt Mirande</h1>
                         <h2 className="red">
                             <Typed
@@ -133,13 +134,20 @@ export default function CenteredGrid() {
                 </Grid>
                 <Grid item xs={12} sm={4}>
                     <Paper elevation={3} className={classes.paper2}>
-                        <Link to="/tensolite" style={{ textDecoration: 'none' }}>
+                        <Link to="/covid" style={{ textDecoration: 'none' }}>
+                            <ProjectoCovid />
                         </Link>
                     </Paper>
                 </Grid>
                 <Grid item xs={12} sm={4}>
                     <Paper elevation={3} className={classes.paper2}>
                         <Link to="/tensolite" style={{ textDecoration: 'none' }}>
+                        </Link>
+                    </Paper>
+                </Grid>
+                <Grid item xs={12} sm={4}>
+                    <Paper elevation={3} className={classes.paper2}>
+                        <Link to="/covid" style={{ textDecoration: 'none' }}>
                         </Link>
                     </Paper>
                 </Grid>
