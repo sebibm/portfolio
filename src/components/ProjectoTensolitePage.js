@@ -33,7 +33,7 @@ export default function RecipeReviewCard() {
                     className="celeste"
                     title="Tensolite" />
                 <CardContent>
-                    <Grid paddingTop={2}>
+                    <Grid >
                         <Chip label="Laravel" color="secondary" />
                         <Chip label="Nodejs" color="secondary" />
                         <Chip label="Express" color="secondary" />

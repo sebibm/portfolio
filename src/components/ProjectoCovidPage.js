@@ -26,9 +26,9 @@ export default function RecipeReviewCard() {
             <Card className={classes.root}>
                 <CardHeader
                     className="celeste"
-                    title="Tensolite" />
+                    title="Covid Argentina" />
                 <CardContent>
-                    <Grid paddingTop={2}>
+                    <Grid >
                         <Chip label="Uso de API" color="secondary" />
                         <Chip label="Laravel" color="secondary" />
                         <Chip label="Linux" color="secondary" />

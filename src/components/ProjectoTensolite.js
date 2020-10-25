@@ -7,6 +7,9 @@ import Chip from '@material-ui/core/Chip';
 import { Grid } from '@material-ui/core';
 import tensolite3 from '../img/tensolite3.png';
 import Button from '@material-ui/core/Button';
+import {
+    Link
+} from "react-router-dom";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -35,29 +38,34 @@ export default function RecipeReviewCard() {
             <div className={classes.root}>
                 <CardHeader
                     className="red"
-                    title="Tensolite" />
+                    title="Panel de autogestion - Tensolite" />
                 <CardMedia
                     className={classes.media}
                     image={tensolite3}
                     title="Panel de autogestion - Tensolite" />
                 <CardContent>
-                    <Grid paddingTop={2}>
+                    <Grid >
                         <Chip label="Laravel" color="secondary" />
                         <Chip label="Nodejs" color="secondary" />
                         <Chip label="Express" color="secondary" />
-                        <Chip label="Linux" color="secondary" />
                         <Chip label="Chartjs" color="secondary" />
                         <Chip label="SAP" color="secondary" />
+                        <Chip label="PM2" color="secondary" />
+                        <Chip label="MySQL" color="secondary" />
+                        <Chip label="Configuracion servidor" color="secondary" />
+                        <Chip label="Apache" color="secondary" />
                     </Grid>
                     <h3 className="white">
-                        Panel de autogestion para tensolite S.A. 
+                        Panel de autogestion para tensolite S.A.
                     </h3>
                     <h3 className="white">
                         Modulos de control stock, modulo de gestion de turnos, modulo de auditoria.
                     </h3>
-                    <Button variant="contained" color="primary">
-                        Mas información
-                    </Button>
+                    <Link to="/tensolite" style={{ textDecoration: 'none' }}>
+                        <Button variant="contained" color="primary">
+                            Mas información
+                        </Button>
+                    </Link>
                 </CardContent>
             </div>
         </div>

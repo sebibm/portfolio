@@ -8,6 +8,9 @@ import {
 } from "react-router-dom";
 import ProjectoTensolitePage from './components/ProjectoTensolitePage'
 import ProjectoCovidPage from './components/ProjectoCovidPage'
+import ProjectoMarcotullioPage from './components/ProjectoMarcotullioPage'
+import ProjectoPaezPage from './components/ProjectoPaezPage'
+import ProjectoAnimePage from './components/ProjectoAnimePage'
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
 
@@ -46,6 +49,15 @@ function App() {
                 </Route>
                 <Route path="/covid">
                   <ProjectoCovidPage />
+                </Route>
+                <Route path="/marcotullio">
+                  <ProjectoMarcotullioPage />
+                </Route>
+                <Route path="/paez">
+                  <ProjectoPaezPage />
+                </Route>
+                <Route path="/anime">
+                  <ProjectoAnimePage />
                 </Route>
                 <Route path="/">
                   <Main />

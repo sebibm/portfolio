@@ -16,7 +16,6 @@ export default class Skills extends Component {
             "type": "MySQL",
             "level": 80,
         },
-
         {
             "type": "Android",
             "level": 75,
@@ -35,30 +34,21 @@ export default class Skills extends Component {
         },
         {
             "type": "CSS/SASS",
-            "level": 60,
-        },
-        {
-            "type": "React",
-            "level": 55,
+            "level": 50,
         },
         {
             "type": "vuejs",
             "level": 50,
         },
+        {
+            "type": "React",
+            "level": 40,
+        },
+        
     ]
     colors = {
-        "bar": {
-            "color": "#53c7c7",
-            "hue": 180,
-            "saturation": 80,
-            "level": {
-                "minimum": 30,
-                "maximum": 70
-            }
-        },
-
+        bar: '#439b9c',
         "title": {
-            "text": "#fff",
             "background": "#333333"
         }
 

@@ -8,6 +8,9 @@ import Skills from './Skills'
 
 import ProjectoTensolite from './ProjectoTensolite'
 import ProjectoCovid from './ProjectoCovid'
+import ProjectoMarcotullio from './ProjectoMarcotullio'
+import ProjectoPaez from './ProjectoPaez'
+import ProjectoAnime from './ProjectoAnime'
 import '../styles/grid.css'
 import Bounce from 'react-reveal/Bounce';
 import Shake from 'react-reveal/Shake';
@@ -15,12 +18,6 @@ import Fade from 'react-reveal/Fade';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import FacebookIcon from '@material-ui/icons/Facebook';
-import {
-    Link
-} from "react-router-dom";
-
-
-
 
 
 const useStyles = makeStyles((theme) => ({
@@ -41,6 +38,15 @@ const useStyles = makeStyles((theme) => ({
         color: 'white',
         background: '#0000004d',
         'min-height': 600,
+        'line-height': '1.5rem'
+    },
+
+    paperProjectos: {
+        padding: theme.spacing(2),
+        textAlign: 'center',
+        color: 'white',
+        background: '#0000004d',
+        'min-height': 700,
         'line-height': '1.5rem'
     },
 
@@ -125,30 +131,29 @@ export default function CenteredGrid() {
                 </Grid>
                 <Grid item xs={12} sm={4}>
                 </Grid>
-                <Grid item xs={12} sm={4}>
-                    <Paper elevation={3} className={classes.paper2}>
-                        <Link to="/tensolite" style={{ textDecoration: 'none' }}>
-                            <ProjectoTensolite />
-                        </Link>
+                <Grid item xs={12} sm={6}>
+                    <Paper elevation={3} className={classes.paperProjectos}>
+                        <ProjectoTensolite />
                     </Paper>
                 </Grid>
-                <Grid item xs={12} sm={4}>
-                    <Paper elevation={3} className={classes.paper2}>
-                        <Link to="/covid" style={{ textDecoration: 'none' }}>
-                            <ProjectoCovid />
-                        </Link>
+                <Grid item xs={12} sm={6}>
+                    <Paper elevation={3} className={classes.paperProjectos}>
+                        <ProjectoCovid />
                     </Paper>
                 </Grid>
-                <Grid item xs={12} sm={4}>
-                    <Paper elevation={3} className={classes.paper2}>
-                        <Link to="/tensolite" style={{ textDecoration: 'none' }}>
-                        </Link>
+                <Grid item xs={12} sm={6}>
+                    <Paper elevation={3} className={classes.paperProjectos}>
+                        <ProjectoMarcotullio />
                     </Paper>
                 </Grid>
-                <Grid item xs={12} sm={4}>
-                    <Paper elevation={3} className={classes.paper2}>
-                        <Link to="/covid" style={{ textDecoration: 'none' }}>
-                        </Link>
+                <Grid item xs={12} sm={6}>
+                    <Paper elevation={3} className={classes.paperProjectos}>
+                        <ProjectoPaez />
+                    </Paper>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                    <Paper elevation={3} className={classes.paperProjectos}>
+                        <ProjectoAnime />
                     </Paper>
                 </Grid>
             </Grid>

@@ -20,8 +20,9 @@ body {
 }
 
 .skillbar-percent {
-  color: #000;
-  font-size: 18px;
+  color: #f50057!important;
+  font-size: 14px!important;
+  -webkit-text-stroke: medium;
 }
 
 .red {
