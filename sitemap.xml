@@ -1,0 +1,27 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
+<url>
+<loc>https://sebibm.github.io/portfolio/</loc>
+<priority>1.00</priority>
+</url>
+<url>
+<loc>https://sebibm.github.io/tensolite</loc>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://sebibm.github.io/covid</loc>
+<priority>0.70</priority>
+</url>
+<url>
+<loc>https://sebibm.github.io/marcotullio</loc>
+<priority>0.50</priority>
+</url>
+<url>
+<loc>https://sebibm.github.io/paez</loc>
+<priority>0.60</priority>
+</url>
+<url>
+<loc>https://sebibm.github.io/anime</loc>
+<priority>0.60</priority>
+</url>
+</urlset>
